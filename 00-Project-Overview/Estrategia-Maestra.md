@@ -58,3 +58,9 @@ Aprender programación para **comprender, construir y dirigir soluciones**, no p
 
 ## Gobernanza
 La persona mantiene dirección y decisiones. ChatGPT sirve para el análisis, la especificación, la pedagogía y la revisión; Claude Code es un ejecutor asistido; GitHub aporta historial y colaboración; Obsidian facilita aprendizaje y continuidad. **La IA propone; la persona valida.**
+
+## Decisión curricular del 10 de octubre de 2026
+**Camino prioritario:** desarrollo de software inteligente (AI Software Engineering). **Python** es el primer lenguaje para fortalecer fundamentos; **TypeScript** es el segundo para soluciones web. IA, automatización, backend y cloud conforman una ruta integrada. Las herramientas y frameworks se eligen según necesidades demostrables, no por popularidad.
+
+Ver [Lección de caminos en programación](../01-Class-Notes/2026-10-10-Caminos-en-Programacion.md) y [Mapa de tecnologías](../02-Concepts/Mapa-Disciplinas-Lenguajes-y-Herramientas.md).
+
