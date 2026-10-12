@@ -159,3 +159,44 @@ Son enlaces de referencia; verificar interfaz y versiones vigentes cuando se apl
 
 ## Próximo paso
 Ejecutar la práctica de debugging en VS Code, documentar capturas o traza, tests y errores antes de marcarla completada.
+
+## 8. Profundización práctica — configuración y seguridad del entorno
+
+**Separación de responsabilidades:**
+- VS Code gestiona edición, navegación e integración.
+- Python instalado ejecuta los programas; `.venv` aísla dependencias por proyecto.
+- Git registra versiones locales; GitHub hospeda el repositorio remoto.
+- Claude Code asiste mediante su propia integración y permisos; no equivale al depurador.
+- Obsidian conserva decisiones, mapas conceptuales y reflexiones.
+
+**Secuencia reproducible en Windows (PowerShell, proyecto aislado):**
+```powershell
+py --version
+mkdir ide-debug-lab
+cd ide-debug-lab
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python --version
+code .
+```
+Si PowerShell impide activar scripts, seleccionar el intérprete `.venv\Scripts\python.exe` desde VS Code y ejecutarlo directamente; no cambiar políticas de seguridad globales innecesariamente. `code .` requiere el comando de VS Code disponible en PATH.
+
+**Antes de ejecutar una sugerencia de IA:**
+1. Revisar archivos que pretende cambiar y el diff.
+2. Comprobar que no incluye secretos, información personal ni cambios de producción.
+3. Entender qué espera conseguir y cuál es el criterio de aceptación.
+4. Ejecutar pruebas en ambiente local aislado.
+5. Aprobar despliegue/operación externa solamente después de revisión.
+
+**Diferencia entre herramientas de depuración:**
+- Breakpoint: detiene ejecución en una línea concreta.
+- Breakpoint condicional: detiene solo cuando se cumple una expresión.
+- Watch: sigue una expresión mientras avanza el programa.
+- Call Stack: revela la cadena de funciones que produjo el punto actual.
+- Debug Console: evalúa expresiones durante la pausa, sujeto al depurador.
+- Logs: registran eventos, pero no sustituyen una inspección controlada del estado.
+
+**Ejercicio de comprensión adicional:** tras corregir `total = galones`, agregar pruebas para `[]`, `[10]` y `[10,15,20]`. Explicar por qué un test del último elemento aislado no detecta el error del acumulador.
+
+### Referencias cruzadas
+El ejercicio de IDE se integra con el pseudocódigo, los bucles Python/JavaScript y el plan de práctica semanal. Se considera realizado únicamente con evidencia de ejecución, breakpoint, diagnóstico, corrección y comprobación.
