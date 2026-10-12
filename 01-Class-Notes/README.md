@@ -6,3 +6,4 @@ Organizar las clases por tema y fecha. Cada nota puede incluir resumen, concepto
 - [2026-10-11 — Fuentes de información y verificación](./2026-10-11-Fuentes-Informacion-y-Verificacion.md) — documentos oficiales, contraste, calidad, actualización sin sobrecarga.
 - [2026-10-11 — IDE: VS Code y debugging](./2026-10-11-IDE-VSCode-Debugging.md) — atajos, autocompletado, breakpoints, refactorización, comparación de IDE y laboratorio.
 - [Control de versiones — Git y GitHub](./2026-10-11-Control-de-Versiones-Git-GitHub.md) — repositorios, staging, commits, ramas, merge y sincronización del Vault.
+- [Buscadores e IA en programación](./2026-10-11-Buscadores-e-IA-Programacion.md) — búsquedas eficaces, ChatGPT, Copilot y autonomía verificable.
